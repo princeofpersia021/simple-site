@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+height: 130vh;
+background-image: url(background.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+color: white;
+}
+.logo{
+    width: 70px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-name{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    text-shadow: 0 0 12px black;
+}
+.nav{
+     justify-content: center;
+    gap: 15px;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 100%;
+    background-color:whitesmoke;
+    border-radius: 30px;
+}
+.nav a{
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+    font-size: 35px;
+    transition: 0.3s;
+}
+.nav a:hover{
+    color: black;
+    font-size: 40px;
+    text-shadow: 0 0 20px black;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form{
+    border: 2px solid #b8860b;
+    box-shadow: 0 0 10px #b8860b;
+    inset: 0 0 5px #b8860b;
+    box-sizing: border-box;
+    min-height: 800px;
+    width:400px;
+    height: 820px;
+    margin: 50px auto;
+    padding: 30px;
+    background-image: url(BACKGROUNDFORM.png);
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+.form input:hover{
+    width: 320px;
+    height: 50px;
+}
+.form h2{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b8860b;
+    font-size: 45px;
+    align-items: center;
+    text-shadow: 0 0 15px #b8860b;
+}
+.form label{
+      font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 15px #b8860b;
+    color: #b8860b;
+    font-size: 35px;
+  display: block;
+  margin-bottom: 15px;
+}
+.form input{
+      font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    border: 2px solid #b8860b;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    width: 300px;
+    height: 35px;
+    display: block;
+    margin-bottom: 15px;
+}
+.form select{
+      font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+     color: whitesmoke;
+    border: 2px solid #b8860b;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    width: 300px;
+    height: 45px;
+    display: block;
+    margin-bottom: 15px;
+}
+.form select option{
+    text-shadow: 0 0 15px #b8860b;
+    color: #b8860b;
+}
+.form textarea{
+     color: whitesmoke;
+    border: 2px solid #b8860b;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    display: block;
+    margin-bottom: 15px;
+}
+.form button{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin: 20px auto;
+    color: black;
+    background-color: #b8860b;
+    text-shadow: 0 0 15px black;
+    align-items: center;
+}
+.form select:hover{
+     width: 320px;
+    height: 50px;
+}
+/*modal background*/
+.modal_overlay{
+position: fixed;
+inset: 0;
+background: rgba(0, 0, 0, 0.8);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 9999;
+opacity: 0;
+visibility: hidden;
+transition: 0.3s ease;
+}
+/*modal visibility*/
+.modal_overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+/*modal box*/
+.modal_box{
+    background: linear-gradient(145deg #1a1a1a #b8860b);
+    width: 90%;
+    max-width: 420px;
+    padding: 35px 25px;
+    border: 1px solid #b8860b;
+    border-radius: 18px;
+    text-align: center;
+    transform: scale(0.8);
+    transition: 0.3s ease;
+    box-shadow: 0 0 35px rgba(197, 160, 82, 0.2);
+}
+.modal_overlay.active .modal_box{
+    transform: scale(1);
+}
+/*success icon*/
+.modal_icon{
+    width: 75px;
+    height: 75px;
+    background: #244b35;
+    color: #65d99a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 0 auto 20px;
+}
+/*title*/
+.modal_box h2{
+    color: #b8860b;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+/*dis*/
+.modal_box p{
+    color: #ddd;
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 15px;
+}
+.modal_box button{
+    background: #b8860b;
+    color: #151515;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 35px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.modal_box button:hover{
+    background: #e2c27d;
+    transform: translateY(-2px);
+}
+/*error modal*/
+.modal_overlay.error.modal_icon{
+    background: #512525;
+    color: #ff7777;
+}
+@media screen and (max-width:600px){
+    body{
+        height: auto;
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+        background-attachment: scroll;
+    }
+    .header{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .nav{
+        width: 100%;
+        gap: 8px 12px;
+        padding: 10px;
+        border-radius: 15px;
+        flex-wrap: wrap;
+        padding: 8px;
+        justify-content: center;
+    }
+    .nav a{
+        font-size: 16px;
+        text-align: center;
+    }
+    .nav a:hover{
+        font-size: 17px;
+    }
+    .logo{
+        max-width: 42px;
+        height: auto;
+    }
+    .logo-name{
+        font-size: 32px;}
+}

@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+height: 100vh;
+background-image: url(background.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+color: white;
+}
+.logo{
+    width: 70px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-name{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    text-shadow: 0 0 12px black;
+}
+.nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     box-sizing: border-box;
+     margin: 0;
+     gap: 15px;
+     width: 100%;
+     background-color: rgb(151, 130, 10);
+     border-radius: 30px;
+}
+.nav a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 35px;
+    transition: 0.3s;
+}
+.nav a:hover{
+    color: #ffffff;
+    font-size: 40px;
+    text-shadow: 0 0 20px whitesmoke;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.h1{
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(151, 130, 10);
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgb(151, 130, 10);
+}
+.h3{
+ font-size: 70px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(151, 130, 10);
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgb(151, 130, 10);
+}
+.p{
+ font-size: 70px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(151, 130, 10);
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgb(151, 130, 10);
+}
+.h5{
+ font-size: 70px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(151, 130, 10);
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgb(151, 130, 10);
+}
+.h52{
+ font-size: 70px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(151, 130, 10);
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgb(151, 130, 10);
+}
+.hero-contact{
+    line-height: 1.3;
+}
+.p2{
+     font-size: 70px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(151, 130, 10);
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgb(151, 130, 10);
+}
+@media screen and (max-width:600px){
+    body{
+        height: auto;
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+        background-attachment: scroll;
+    }
+    .header{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .nav{
+        width: 100%;
+        gap: 8px 12px;
+        padding: 10px;
+        border-radius: 15px;
+        flex-wrap: wrap;
+        padding: 8px;
+        justify-content: center;
+    }
+    .nav a{
+        font-size: 16px;
+        text-align: center;
+    }
+    .nav a:hover{
+        font-size: 17px;
+    }
+    .logo{
+        max-width: 42px;
+        height: auto;
+    }
+    .logo-name{
+        font-size: 32px;
+    }
+    .h1,h3,p,h5,h52,p2{
+        font-size: 27px;
+        letter-spacing: 1px;
+        top: 15px;
+        text-align: center;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+    .hero-contact{
+        line-height: 1;
+        padding: 1px;
+    }
+}
